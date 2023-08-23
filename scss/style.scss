@@ -4,33 +4,33 @@ $yellowColor:#F2BE22;
 $greenColor:#1A3E3E;
 
 @font-face {
-      font-family: "Next Art Bold";
-      src: url("../assets/fonts/NEXT\ ART_Bold.otf");
+      font-family: "NEXT ART_Bold";
+      src: url("../assets/fonts/NEXT ART_Bold.otf");
     }
 
 @font-face {
-      font-family: "Nunito Sans	Regular";
-      src: url("../assets/fonts/NunitoSans_10pt-Regular.ttf");
+      font-family: "Nunito Sans Regular";
+      src: url("../assets/fonts//NunitoSans_7pt_Condensed-Regular.ttf");
     }
 
 @font-face {
       font-family: "Nunito Sans	ExtraBold";
-      src: url("../assets/fonts/NunitoSans_10pt-ExtraBold.ttf");
+      src: url("../assets/fonts/NunitoSans_7pt_Condensed-ExtraBold.ttf");
     }
 
 @font-face {
-      font-family: "Nunito Sans	SemiBold";
-      src: url("../assets/fonts/NunitoSans_10pt-SemiBold.ttf");
+      font-family: "Nunito Sans Semibold";
+      src: url("../assets/fonts/NunitoSans_7pt_Condensed-SemiBold.ttf");
     }
 
 @font-face {
       font-family: "Nunito Sans	Bold";
-      src: url("../assets/fonts/NunitoSans_10pt-Bold.ttf");
+      src: url("../assets/fonts/NunitoSans_7pt_Condensed-Bold.ttf");
     }
 
 @font-face {
       font-family: "Nunito Sans	Light";
-      src: url("../assets/fonts/NunitoSans_10pt-Light.ttf");
+      src: url("../assets/fonts/NunitoSans_7pt_Condensed-Light.ttf");
     }
 
 *{
@@ -45,6 +45,7 @@ body{
 }
 
 nav{
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,9 +63,11 @@ nav{
             justify-content: space-between;
             list-style-type: none;
             margin-right: 50px;
+            li{
+                padding-right: 24px;
+            }
             .list_item{
                 text-decoration: none;
-                padding-right: 24px;
                 font-size: 18px;
                 color: $whiteColor;
             }
@@ -83,11 +86,11 @@ nav{
 
 .wrapper{
     margin: 0 auto;
-    min-height: 1080px;
+    max-width: 1180px;
 }
 
 .background_hero{
     min-width:100vh;
     min-height:100vh;
-    background-image: url(/assets/images/hero_block.png);
+    background-image: url(../assets/images/hero_block.png);
 }
